@@ -18,7 +18,7 @@ builder.Host.UseSerilog((ctx, lc) =>  lc.WriteTo.Console().ReadFrom.Configuratio
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipelines.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
